@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&family=Oswald:wght@300&family=PT+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400&family=Roboto:wght@300;400&family=Slabo+13px&family=Slabo+27px&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgb(22, 19, 19);
+}
+
+.card{
+    /* border: 1px solid white; */
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto 0;
+    /* height: 500px; */
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    background: hsla(239, 100%, 67%, 1);
+    background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+}
+
+.search{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 50px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    flex:1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+.search button img{
+    width: 17px;
+    margin: auto;
+}
+
+.weather{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather img{
+    width: 80px;
+    margin: auto;
+}
+
+.weather .temp{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.weather .city{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.details .col{
+    display: flex;
+}
+
+.details img{
+    width: 40px;
+
+}
+
+.details .f{
+    font-size: 22px;
+}
+.weather{
+    display: none;
+}
+.error {
+    text-align: left;
+    margin-left: 8px;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
